@@ -13,8 +13,6 @@ import { Console } from 'console';
 dotenv.config();
 
 const app = express();
-const express = require('express');
-const { Request, Response } = require('express');
 
 
 app.use(cors({
