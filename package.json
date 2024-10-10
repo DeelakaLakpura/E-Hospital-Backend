@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "TG_ALLOW_MIXED=ALLOW ts-node backend/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node --esm src/index.ts",
+    "build": "tsc", 
+    "serve": "node dist/index.js" 
   },
   "keywords": [],
   "author": "",
@@ -27,5 +28,6 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/mongoose": "^5.11.97"
-  }
+  },
+  "type": "module"
 }
